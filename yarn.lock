@@ -1021,6 +1021,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@efrem/showcommits@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@efrem/showcommits@workspace:."
+  dependencies:
+    "@babel/cli": ^7.8.4
+    "@babel/core": ^7.8.6
+    "@babel/preset-env": ^7.8.6
+    "@babel/register": ^7.8.6
+    "@types/node": ^13.7.7
+    "@yarnpkg/pnpify": ^2.0.0-rc.18
+    babel-eslint: ^10.1.0
+    core-js: ^3.6.4
+    eslint: ^6.8.0
+    prettier: ^1.19.1
+    typescript: ^3.8.3
+  bin:
+    showcommits: dist/index.js
+  languageName: unknown
+  linkType: soft
+
 "@types/color-name@npm:^1.1.1":
   version: 1.1.1
   resolution: "@types/color-name@npm:1.1.1"
@@ -3935,24 +3955,6 @@ fsevents@^1.2.7:
   checksum: 2/cf1a41cb09023e7d39739d7145fcba57c3fabc6728b78ce706f7315cf52dfadf30f7eea664e069224fbcbbfb6ab853bc55ac45f494b47ee73fc209c98487fae5
   languageName: node
   linkType: hard
-
-"showcommits@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "showcommits@workspace:."
-  dependencies:
-    "@babel/cli": ^7.8.4
-    "@babel/core": ^7.8.6
-    "@babel/preset-env": ^7.8.6
-    "@babel/register": ^7.8.6
-    "@types/node": ^13.7.7
-    "@yarnpkg/pnpify": ^2.0.0-rc.18
-    babel-eslint: ^10.1.0
-    core-js: ^3.6.4
-    eslint: ^6.8.0
-    prettier: ^1.19.1
-    typescript: ^3.8.3
-  languageName: unknown
-  linkType: soft
 
 "signal-exit@npm:^3.0.0, signal-exit@npm:^3.0.2":
   version: 3.0.2
