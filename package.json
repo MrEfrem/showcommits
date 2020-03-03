@@ -1,7 +1,9 @@
 {
   "name": "@efrem/showcommits",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "dist/index.js",
+  "repository": "https://github.com/MrEfrem/showcommits.git",
+  "author": "MrEfrem <mr.efrem@gmail.com>",
   "license": "MIT",
   "scripts": {
     "start": "node -r @babel/register src/index.js",
