@@ -19,9 +19,9 @@ const dirs = fs.readdirSync('.');
 /**
  * @param {string} source
  */
-const isDirectory = source => fs.statSync(source).isDirectory();
+const isDirectory = (source) => fs.statSync(source).isDirectory();
 
-const filteredDirs = dirs.filter(dir => {
+const filteredDirs = dirs.filter((dir) => {
   try {
     return isDirectory(dir) && isDirectory(join(dir, '.git'));
   } catch (err) {} // eslint-disable-line
