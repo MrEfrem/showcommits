@@ -1,3 +1,17 @@
+# Show Git repos commits
+
+### Yarn 2 (berry)
+
+```bash
+yarn dlx @efrem/showcommits [-v] [--verbose] [--date=2020] [--date=2020-03]
+```
+
+### Npm
+
+```bash
+npx @efrem/showcommits [-v] [--verbose] [--date=2020] [--date=2020-03]
+```
+
 # VSCode
 
 - Setup (<https://yarnpkg.com/advanced/editor-sdks#vscode>)
