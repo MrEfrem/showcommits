@@ -52,7 +52,7 @@ filteredDirs.sort();
 let resultHtml = '';
 for (let dir of filteredDirs) {
   const results = execSync(
-    `cd ${dir} && git hist|grep -i ${filterDate}|awk '{$1="";$2="";$4="";print $0}'|sed 's/(HEAD.*//g'|sed 's/(origin.*)//g'|sed 's/\\[MrEfrem.*//g'`
+    `cd ${dir} && git hist|grep -i ${filterDate}|awk '{$1="";$2="";$4="";print $0}'|sed 's/(HEAD.*//g'|sed 's/(origin.*)//g'|sed 's/\\[(MrEfrem|Александр|Alexander).*//g'|sed 's/ (#[0-9]*)//g'`
   ).toString();
   if (results) {
     //eslint-disable-next-line
@@ -70,6 +70,10 @@ for (let dir of filteredDirs) {
           (curDate.getDate() <= 10 && curDay > 15)
         ) {
           const str = `${dir}: ${rest.join(' ').trim()}`;
+          if (/\s\[(?!(MrEfrem|Александр|Alexander)).+\]/.test(str)) {
+            console.log(`-------- IGNORE ------- ${date} ${str}`);
+            return;
+          }
           console.log(`${date} ${str}`);
           resultHtml = `${resultHtml}<tr><td>${str}</td></tr>`;
         }

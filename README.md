@@ -19,7 +19,7 @@ npx @efrem/showcommits [--date=2020] [--date=2020-03]
   - Open this project directly otherwise you should add to VSCode Workspace `settings.json`:
 
   ```json
-  "typescript.tsdk": "<current directory name>/.vscode/pnpify/typescript/lib"
+  "typescript.tsdk": "<current directory name>/.yarn/sdks/typescript/lib"
   ```
 
   - Press ctrl+shift+p in a TypeScript file
